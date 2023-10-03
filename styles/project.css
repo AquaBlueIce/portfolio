@@ -1,0 +1,41 @@
+.project {
+  /* margin-top: 50px */
+  background-color: #ececec;
+  height: 100vh;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.project-container {
+  border-style: 1px solid #000a36;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  height: 250px;
+  width: 500px;
+  border-radius: 20px;
+  padding-left: 50px;
+}
+
+.icon-holder {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.icon-holder img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  margin-left: 10px;
+}
+
+.game-title {
+  font-family: "BurbankBigCondensed-Bold";
+  font-size: 50px;
+}

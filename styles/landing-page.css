@@ -1,0 +1,41 @@
+.intro {
+  height: 100vh;
+  background-color: #000a36;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page {
+  padding: 30px;
+}
+
+.landing-page p{
+  color: white;
+  /* font-size: 25px; */
+  font-family: "Montserrat";
+}
+
+.name-s {
+  font-family: "Barlow Condensed Black";
+  font-size: 100px;
+}
+
+.name {
+  font-family: "Barlow Condensed Black";
+  color: #89f8ff;
+}
+
+.intro-text {
+  font-size: 30px;
+}
+
+.project-button {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #8a6d6d;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+}
+
