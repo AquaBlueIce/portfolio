@@ -47,7 +47,7 @@
 
 .ptext:after {
   content: 'Computer Engineer';
-  animation: animate 10s infinite;
+  animation: animate 5s infinite;
 }
 
 @keyframes animate {
