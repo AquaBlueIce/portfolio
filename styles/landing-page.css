@@ -17,12 +17,13 @@
 }
 
 .name-s {
-  font-family: "Barlow Condensed Black";
+  font-family: "Barlow Condensed";
   font-size: 100px;
 }
 
 .name {
-  font-family: "Barlow Condensed Black";
+  font-family: "Barlow Condensed";
+  font-weight: bolder;
   color: #89f8ff;
 }
 

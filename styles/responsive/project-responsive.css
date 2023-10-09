@@ -1,7 +1,21 @@
 @media screen and (max-width:768px) {
+  .project {
+    height: fit-content;
+  }
   .project-container {
     /* height: 250px; */
     width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .project-holder {
+    /* height: 250px; */
+    width: 80%;
+  }
+
+  .project-info p {
+    font-size: 30px;
   }
 }
 

@@ -1,0 +1,5 @@
+@media screen and (max-width:768px) {
+  .skills-container {
+grid-template-columns: 1fr 1fr 1fr;
+  }
+}

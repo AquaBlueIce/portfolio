@@ -9,6 +9,11 @@
 }
 
 .project-container {
+  display: flex;
+
+}
+
+.project-holder {
   border-style: 1px solid #000a36;
   border-style: solid;
   border-width: 1px;
@@ -16,14 +21,17 @@
   display: flex;
   align-items: center;
   height: 250px;
-  width: 500px;
+  width: 350px;
   border-radius: 20px;
   padding-left: 50px;
+  margin-bottom: 10px;
+  margin-right: 5px;
 }
 
 .icon-holder {
   height: 100px;
-  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -39,7 +47,19 @@
 }
 
 .game-title {
-  font-family: "BurbankBigCondensed-Bold";
+  font-family: "Barlow Condensed";
   font-size: 50px;
   color: white;
+}
+
+.dllink {
+  font-family: 'Clash Display';
+  color: aliceblue;
+}
+
+.proj-sample-section {
+  font-family: 'Clash Display';
+  font-weight: 100;
+  color: white;
+  font-size: 20px;
 }
