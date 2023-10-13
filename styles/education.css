@@ -1,4 +1,4 @@
-.about {
+.education {
   background-color: #000a36;
   height: fit-content;
   padding: 50px;
@@ -7,10 +7,18 @@
   justify-content: center;
 }
 
-.about-me-text {
+.school-info {
   color: aliceblue;
-  max-width: 700px;
   font-family: 'poppins';
   font-size: 15px;
   word-wrap: break-word;
+}
+
+.degree {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.dategrad {
+  color: rgb(182, 182, 182);
 }

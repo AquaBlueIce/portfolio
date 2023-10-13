@@ -1,17 +1,32 @@
-@media screen and (max-width:768px) {
-  .project {
-    height: fit-content;
-  }
+@media screen and (max-width:420px) {
+ 
   .project-container {
     /* height: 250px; */
-    width: 80%;
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
   }
   .project-holder {
     /* height: 250px; */
-    width: 90%;
+    width: 80%;
+  }
+
+  .project-info p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:775px) {
+ 
+  .project-container {
+    /* height: 250px; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .project-holder {
+    /* height: 250px; */
+    width: 80%;
   }
 
   .project-info p {
