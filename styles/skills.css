@@ -27,9 +27,11 @@
   width: 75px;
   height: 75px;
   text-align: center;
-  font-size: 12px;
   color: aliceblue;
+}
 
+.skills-holder p {
+  font-size: 12px;
 }
 
 .skill-icon-container {
