@@ -12,15 +12,7 @@
     />
 
     <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/landing-page.css" />
-    <link rel="stylesheet" href="styles/about.css" />
-    <link rel="stylesheet" href="styles/project.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/skills.css" />
-    <link rel="stylesheet" href="styles/education.css" />
-    <link rel="stylesheet" href="styles/experience.css" />
-    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/homepage.css" />
 
     <link
       rel="stylesheet"
@@ -29,14 +21,38 @@
     <link rel="stylesheet" href="styles/responsive/project-responsive.css" />
     <link rel="stylesheet" href="styles/responsive/skills-responsive.css" />
 
-    <link rel="icon" href="image/icon.png" />
+    <link rel="website icon" href="image/icon.png" />
   </head>
   <body>
     <div class="header">
       <div class="left-section">
-        <p>Akuwa</p>
+        <div class="logo logo-img"><a href="#"></a></div>
+        <p class="logo logo-text"><a href="">AQUABLUEICE</a></p>
       </div>
+      <div class="center-section">
+        <ul class="ul">
+          <li><a href="#about" class="hover-underline-animation">About</a></li>
+          <li>
+            <a href="#skills" class="hover-underline-animation">Skills</a>
+          </li>
+          <li>
+            <a href="#experience" class="hover-underline-animation"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="hover-underline-animation">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover-underline-animation">Contact</a>
+          </li>
+        </ul>
+      </div>
+
       <div class="right-section">
+        <a href="resume/Elpedes Resume.pdf" target="_blank"
+          ><button class="btn btn-cv neon">View CV</button></a
+        >
         <p></p>
       </div>
     </div>
@@ -50,18 +66,13 @@
           As an aspiring Web Developer, I'm still practicing myself designing
           and coding in different languages.
         </p>
-
-        <a href="#projects"><button class="project-button">PROJECTS</button></a>
-        <a href="resume/Elpedes Resume.pdf" target="_blank"
-          ><button class="project-button">Resume</button></a
-        >
         <div class="myPicture"></div>
       </div>
     </section>
 
     <section class="about">
       <div class="container">
-        <h2>About Me</h2>
+        <h2 id="about">About Me</h2>
         <div class="about-me-text">
           <p>
             Hello, I'm Akuwa, and I embarked on my coding journey from a simple
@@ -95,13 +106,20 @@
             experiences, and the diverse projects that have defined my path in
             the world of IT.
           </p>
+          <button class="btn-learn-more learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Find out Who Am I</span>
+          </button>
         </div>
       </div>
     </section>
 
     <section class="skills">
       <div class="content-container">
-        <h2>Skills</h2>
+        <h2 id="skills">Skills / Technologies</h2>
+        <p class="skills-separator">Note: I mostly know the basics</p>
         <div class="skills-container">
           <div class="skills-holder">
             <div class="skill-icon-container">
@@ -143,6 +161,27 @@
               <img src="image/skill-icon/icons8-python-48.png" alt="" />
             </div>
             <p>Python</p>
+          </div>
+
+          <div class="skills-holder">
+            <div class="skill-icon-container">
+              <img src="image/skill-icon/c-sharp.png" alt="" />
+            </div>
+            <p>C#</p>
+          </div>
+
+          <div class="skills-holder">
+            <div class="skill-icon-container">
+              <img src="image/skill-icon/icons8-php-logo-40.png" alt="" />
+            </div>
+            <p>Php</p>
+          </div>
+
+          <div class="skills-holder">
+            <div class="skill-icon-container">
+              <img src="image/skill-icon/icons8-lua-logo-48.png" alt="" />
+            </div>
+            <p>Lua</p>
           </div>
 
           <div class="skills-holder">
@@ -203,7 +242,7 @@
           </div>
         </div>
 
-        <p class="proj-sample-section">Used during school activity</p>
+        <p class="skills-separator">Used during school activity</p>
         <div class="skills-container">
           <div class="skills-holder">
             <div class="skill-icon-container">
@@ -230,15 +269,8 @@
           </div>
         </div>
 
-        <p class="proj-sample-section">Still learning</p>
+        <p class="skills-separator">Still learning</p>
         <div class="skills-container">
-          <div class="skills-holder">
-            <div class="skill-icon-container">
-              <img src="image/skill-icon/c-sharp.png" alt="" />
-            </div>
-            <p>C#</p>
-          </div>
-
           <div class="skills-holder">
             <div class="skill-icon-container">
               <img src="image/skill-icon/icons8-postgresql-48.png" alt="" />
@@ -296,7 +328,7 @@
 
     <section class="experience">
       <div class="container">
-        <h2>Experience</h2>
+        <h2 id="experience">Experience</h2>
         <div class="experience-container">
           <div class="experience-holder">
             <p class="company">Prediktib Inc. I June 13 2022 – July 22 2022</p>
@@ -327,6 +359,26 @@
             </ul>
           </div>
         </div>
+        <h2>Certificate</h2>
+        <div class="certificate-holder">
+          <ul>
+            <li>Udemy - Learn HTML for Beginners</li>
+            <li>
+              Udemy - HTML, CSS, & Bootstrap - Certification Course for
+              Beginners
+            </li>
+            <li>
+              Udemy - CSS & JavaScript - Certification Course for Beginners
+            </li>
+            <li>
+              Udemy - Python And Django Framework And HTML5 Complete Course 2022
+            </li>
+            <li>Udemy - C++ And PHP Complete Course 2023</li>
+            <li>
+              Udemy - Introduction to Domain Names and Web Hosting - Quick Guide
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -334,36 +386,55 @@
       <div class="container">
         <h2><a id="projects"></a>Personal Projects</h2>
 
-        <p class="proj-sample-section">Website Clone</p>
+        <p class="proj-sample-section">Website Dev</p>
         <div class="project-container">
-          <div class="project-holder">
-            <div class="icon-holder">
-              <img src="projects/proj-icon/icons8-facebook-144.png" alt="" />
+          <div class="website-project-holder hover-neon">
+            <div class="website-preview">
+              <img
+                class="hover-image"
+                src="/projects/preview/facebook-preview.png"
+                alt=""
+              />
             </div>
+            <div class="website-project-info">
+              <div class="icon-holder">
+                <img src="image/social-icon/icons8-facebook-144.png" alt="" />
+              </div>
 
-            <div class="project-info">
-              <p class="game-title">Facebook Clone</p>
-              <a
-                class="dllink"
-                href="https://aquablueice.github.io/facebook-clone/"
-                target="_blank"
-                >Open Here!</a
-              >
+              <div class="project-info">
+                <p class="project-title">Facebook Clone</p>
+                <a
+                  class="dllink"
+                  href="https://aquablueice.github.io/facebook-clone/"
+                  target="_blank"
+                  >Open Here!</a
+                >
+              </div>
             </div>
           </div>
-          <div class="project-holder">
-            <div class="icon-holder">
-              <img src="projects/proj-icon/icons8-youtube-144.png" alt="" />
-            </div>
 
-            <div class="project-info">
-              <p class="game-title">Youtube Clone</p>
-              <a
-                class="dllink"
-                href="https://aquablueice.github.io/youtube-clone/"
-                target="_blank"
-                >Open Here!</a
-              >
+          <div class="website-project-holder hover-neon">
+            <div class="website-preview">
+              <img
+                class="hover-image"
+                src="/projects/preview/youtube-preview.png"
+                alt=""
+              />
+            </div>
+            <div class="website-project-info">
+              <div class="icon-holder">
+                <img src="image/social-icon/icons8-youtube-144.png" alt="" />
+              </div>
+
+              <div class="project-info">
+                <p class="project-title">Youtube Clone</p>
+                <a
+                  class="dllink"
+                  href="https://aquablueice.github.io/youtube-clone/"
+                  target="_blank"
+                  >Open Here!</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -371,35 +442,67 @@
         <p class="proj-sample-section">Game/App Developing Project</p>
 
         <div class="project-container">
-          <div class="project-holder">
-            <div class="icon-holder">
-              <img src="projects/proj-icon/icon-musicq.png" alt="" />
+          <div class="application-project-holder hover-neon">
+            <div class="application-project-holder-row">
+              <div class="icon-holder">
+                <img src="projects/proj-icon/icon-musicq.png" alt="" />
+              </div>
+
+              <div class="project-info">
+                <p class="project-title">Music Que</p>
+                <a
+                  class="dllink"
+                  href="projects/musicque/Music Que 1.0.0.apk"
+                  download=""
+                  >Download Here!</a
+                >
+              </div>
             </div>
 
-            <div class="project-info">
-              <p class="game-title">Music Que</p>
-              <a
-                class="dllink"
-                href="projects/musicque/Music Que 1.0.0.apk"
-                download=""
-                >Download Here!</a
-              >
+            <div class="application-project-holder-row">
+              <div class="project-screenshot-holder">
+                <div class="project-screenshot">
+                  <img
+                    class="hover-image"
+                    src="projects/preview/ss-music-que-1.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="project-screenshot">
+                  <img
+                    class="hover-image"
+                    src="projects/preview/ss-music-que-2.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="project-screenshot">
+                  <img
+                    class="hover-image"
+                    src="projects/preview/ss-music-que-3.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="project-holder">
-            <div class="icon-holder">
-              <img src="projects/proj-icon/icon-postgridmaker.jpg" alt="" />
-            </div>
+          <div class="application-project-holder hover-neon">
+            <div class="application-project-holder-row">
+              <div class="icon-holder">
+                <img src="projects/proj-icon/icon-postgridmaker.jpg" alt="" />
+              </div>
 
-            <div class="project-info">
-              <p class="game-title">Post Grid Maker</p>
-              <a
-                class="dllink"
-                href="projects/postgridmaker/Post-Grid-Maker-1.6.0.apk"
-                download=""
-                >Download Here!</a
-              >
+              <div class="project-info">
+                <p class="project-title">Post Grid Maker</p>
+                <a
+                  class="dllink"
+                  href="projects/postgridmaker/Post-Grid-Maker-1.6.0.apk"
+                  download=""
+                  >Download Here!</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -425,9 +528,97 @@
     </section>
 
     <section class="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p><a href="mailto:aquablueice.business@gmail.com">Email</a></p>
+      <div class="contact-container">
+        <h2 id="contact">Contact</h2>
+
+        <p class="email">
+          <a href="mailto:aquablueice.business@gmail.com"
+            >aquablueice.business@gmail.com</a
+          >
+        </p>
+
+        <div class="social">
+          <div class="social-icon">
+            <a href="https://discord.gg/qhCCFyvacX" target="_blank">
+              <img
+                class="social-icon-img"
+                src="image/social-icon/icons8-discord-50.png"
+                alt="discord"
+            /></a>
+          </div>
+
+          <div class="social-icon">
+            <a href="https://www.twitch.tv/aquablueice" target="_blank">
+              <img
+                class="social-icon-img"
+                src="image/social-icon/icons8-twitch-50.png"
+                alt="twicth"
+            /></a>
+          </div>
+
+          <div class="social-icon">
+            <a
+              href="https://www.facebook.com/aquablueiceNonOfficial"
+              target="_blank"
+            >
+              <img
+                class="social-icon-img"
+                src="image/social-icon/icons8-facebook-50.png"
+                alt="facebook"
+            /></a>
+          </div>
+
+          <div class="social-icon">
+            <a
+              href="https://www.youtube.com/channel/UCWuWGeu-E76bWaXdjoLuryA"
+              target="_blank"
+            >
+              <img
+                class="social-icon-img"
+                src="image/social-icon/icons8-youtube-50.png"
+                alt="youtube"
+            /></a>
+          </div>
+
+          <div class="social-icon">
+            <a href="https://twitter.com/aquablueiceph" target="_blank">
+              <img
+                class="social-icon-img"
+                src="image/social-icon/icons8-twitterx-30.png"
+                alt="twitter"
+            /></a>
+          </div>
+
+          <div class="social-icon">
+            <a href="https://www.tiktok.com/@aquablueice" target="_blank">
+              <img
+                class="social-icon-img"
+                src="image/social-icon/icons8-tiktok-50.png"
+                alt="tiktok"
+            /></a>
+          </div>
+
+          <div class="social-icon">
+            <a href="https://www.instagram.com/aquablueiceph" target="_blank">
+              <img
+                class="social-icon-img"
+                src="image/social-icon/icons8-instagram-50.png"
+                alt="instagram"
+            /></a>
+          </div>
+
+          <div class="social-icon">
+            <a
+              href="https://www.linkedin.com/in/bernardo-jr-elpedes-4101a8200/"
+              target="_blank"
+            >
+              <img
+                class="social-icon-img"
+                src="image/social-icon/icons8-linkedin-50.png"
+                alt="linkkedin"
+            /></a>
+          </div>
+        </div>
       </div>
     </section>
 
