@@ -415,11 +415,16 @@ a {
   padding: 50px;
   display: flex;
   justify-content: center;
+  /* max-width: 700px; */
 }
 
 .project-container {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
+
+/* || WEBSITE PROJ HOLDER */
 
 .website-project-holder {
   border: 1px solid aqua;
@@ -458,6 +463,7 @@ a {
   align-items: center;
 }
 
+
 .application-project-holder {
   border: 1px solid aqua;
   background-color: #1c2653;
@@ -470,12 +476,15 @@ a {
   margin-right: 5px;
   height: fit-content;
   width: 300px;
+  /* position: relative; */
 }
 
-.application-project-holder-row {
+.application-project-holder-label {
   display: flex;
   align-items: center;
   height: fit-content;
+  margin-bottom: 5px;
+  /* animation: showInfo 0.5s ease; */
 }
 
 .application-project-holder-row:first-child{
@@ -487,15 +496,40 @@ a {
   height: 250px;
   width: 100%;
   display: flex;
-  /* scroll-behavior: smooth; */
   overflow-x: scroll;
-  scrollbar-width: none;
+}
+
+.hidden-more-info {
+  max-height: 0;
+  overflow: hidden;
+  transform-origin: top center;
+  transition: max-height 0.5s;
+}
+
+.checkbox-button {
+  display: none;
+}
+
+.checkbox-button:checked + .hidden-more-info {
+  max-height: 500px;
+}
+
+.btn-download {
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.project-info-bottom {
+  display: flex;
+  align-items: center;
 }
 
 .project-screenshot {
   background-color: green;
   height: 100%;
-  min-width: 9.5rem;
+  min-width: 8rem;
   border-radius: 10px;
   overflow: hidden;
   margin-right: 5px;
@@ -506,8 +540,8 @@ a {
   width: 100%;
   object-fit: cover;
   transition: all .1s ease;
-
 }
+
 
 .icon-holder {
   height: 50px;
@@ -533,10 +567,16 @@ a {
   color: white;
 }
 
+.more-info p,
+.project-info-text,
 .dllink {
   font-family: 'Clash Display';
   color: aliceblue;
   font-size: 15px;
+}
+
+.more-info p{
+  margin-bottom: 5px;
 }
 
 .proj-sample-section {
@@ -559,6 +599,7 @@ a {
 
 .container {
   width: 700px;
+  height: fit-content;
 }
 
 .school-info {

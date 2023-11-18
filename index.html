@@ -29,6 +29,7 @@
         <div class="logo logo-img"><a href="#"></a></div>
         <p class="logo logo-text"><a href="">AQUABLUEICE</a></p>
       </div>
+
       <div class="center-section">
         <ul class="ul">
           <li><a href="#about" class="hover-underline-animation">About</a></li>
@@ -110,7 +111,7 @@
             <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
             </span>
-            <span class="button-text">Find out Who Am I</span>
+            <span class="button-text">Find out Who I Am</span>
           </button>
         </div>
       </div>
@@ -387,6 +388,7 @@
         <h2><a id="projects"></a>Personal Projects</h2>
 
         <p class="proj-sample-section">Website Dev</p>
+
         <div class="project-container">
           <div class="website-project-holder hover-neon">
             <div class="website-preview">
@@ -443,23 +445,48 @@
 
         <div class="project-container">
           <div class="application-project-holder hover-neon">
-            <div class="application-project-holder-row">
+            <label for="first" class="application-project-holder-label">
               <div class="icon-holder">
                 <img src="projects/proj-icon/icon-musicq.png" alt="" />
               </div>
 
               <div class="project-info">
                 <p class="project-title">Music Que</p>
-                <a
-                  class="dllink"
-                  href="projects/musicque/Music Que 1.0.0.apk"
-                  download=""
-                  >Download Here!</a
-                >
+                <div class="project-info-bottom">
+                  <button class="btn-download">
+                    <a
+                      class="dllink"
+                      href="projects/musicque/Music Que 1.0.0.apk"
+                      download=""
+                      >Download Here!</a
+                    >
+                  </button>
+                  <p class="project-info-text">Show More!</p>
+                </div>
               </div>
-            </div>
+            </label>
 
-            <div class="application-project-holder-row">
+            <input
+              type="checkbox"
+              class="checkbox-button"
+              name="accordion"
+              id="first"
+            />
+
+            <div class="hidden-more-info">
+              <p class="project-info-text">Technologies:</p>
+              <div class="more-info">
+                <p>Java - Android Studio</p>
+              </div>
+              <p class="project-info-text">Description:</p>
+              <div class="more-info">
+                <p>
+                  Game Created last 2019 <br />This game is not perfect. But I
+                  hope you try and enjoy!
+                </p>
+              </div>
+              <p class="project-info-text">Screen Shots</p>
+
               <div class="project-screenshot-holder">
                 <div class="project-screenshot">
                   <img
@@ -489,28 +516,83 @@
           </div>
 
           <div class="application-project-holder hover-neon">
-            <div class="application-project-holder-row">
+            <label for="second" class="application-project-holder-label">
               <div class="icon-holder">
                 <img src="projects/proj-icon/icon-postgridmaker.jpg" alt="" />
               </div>
 
               <div class="project-info">
                 <p class="project-title">Post Grid Maker</p>
-                <a
-                  class="dllink"
-                  href="projects/postgridmaker/Post-Grid-Maker-1.6.0.apk"
-                  download=""
-                  >Download Here!</a
-                >
+                <div class="project-info-bottom">
+                  <button class="btn-download">
+                    <a
+                      class="dllink"
+                      href="projects/postgridmaker/Post-Grid-Maker-1.6.0.apk"
+                      download=""
+                      >Download Here!</a
+                    >
+                  </button>
+                  <p class="project-info-text">Show More!</p>
+                </div>
+              </div>
+            </label>
+
+            <input
+              type="checkbox"
+              class="checkbox-button"
+              name="accordion"
+              id="second"
+              unchecked
+            />
+
+            <div class="hidden-more-info">
+              <p class="project-info-text">Technologies:</p>
+              <div class="more-info">
+                <p>Java - Android Studio</p>
+              </div>
+              <p class="project-info-text">Description:</p>
+              <div class="more-info">
+                <p>Used to crop image for your Facebook and Instagram</p>
+              </div>
+              <p class="project-info-text">Screen Shots</p>
+              <div class="project-screenshot-holder">
+                <div class="project-screenshot">
+                  <img
+                    class="hover-image"
+                    src="projects/preview/postgridmaker_ss_1.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="project-screenshot">
+                  <img
+                    class="hover-image"
+                    src="projects/preview/postgridmaker_ss_2.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="project-screenshot">
+                  <img
+                    class="hover-image"
+                    src="projects/preview/postgridmaker_ss_3.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="project-screenshot">
+                  <img
+                    class="hover-image"
+                    src="projects/preview/postgridmaker_ss_4.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <p class="proj-sample-section">Video Editing</p>
-        <div class="project-container">
-          <div class="project-holder"></div>
-        </div>
+        <p class="proj-sample-section">Video Editing & Drawing</p>
       </div>
     </section>
 
