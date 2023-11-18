@@ -1,0 +1,19 @@
+@media screen and (max-width:767px) {
+  .name-s {
+    font-family: "Barlow Condensed Black";
+    font-size: 50px;
+  }
+
+  .intro-text {
+    font-size: 20px;
+  }
+
+  
+  .ptext {
+    font-size: 20px;
+  }
+
+  .project-info-bottom p.project-info-text {
+    font-size: 15px;
+  }
+}
