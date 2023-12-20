@@ -60,9 +60,12 @@
         <p class="intro-text">Hi!</p>
         <p class="name-s">I'm <span class="name">AquaBlueIce</span></p>
         <p class="intro-text">
-          <span class="ptext hero glitch layers"></span><br />
-          As an aspiring Web Developer, I'm still practicing myself designing
-          and coding in different languages.
+          <span class="ptext hero glitch layers"></span><br /><span
+            class="subtitle"
+          >
+            As an aspiring Web Developer, I'm still practicing myself designing
+            and coding in different languages.
+          </span>
         </p>
         <div class="myPicture"></div>
       </div>
@@ -73,42 +76,25 @@
         <h2 id="about">About Me</h2>
         <div class="about-me-text">
           <p>
-            Hello, I'm Akuwa, and I embarked on my coding journey from a simple
-            moment of inspiration. It all began when I saw my sister, a diligent
-            BSIT (Bachelor of Science in Information Technology) student,
-            passionately immersed in the world of technology. Witnessing her
-            dedication and the remarkable things she could create through coding
-            ignited a spark within me. From that moment, I knew I had found my
-            calling in the realm of technology and software development.
-            <br />
-            <br />
-            In addition to my passion for coding, I have a strong academic
-            foundation. I pursued a degree in Computer Engineering and proudly
-            graduated on June 28, 2023. My educational journey has equipped me
-            with a solid understanding of both hardware and software, making me
-            a well-rounded technologist.
-            <br /><br />
-            But the learning journey doesn't stop with graduation. I'm currently
-            enrolled in numerous Udemy courses to keep expanding my knowledge
-            and skills in various programming languages and emerging
-            technologies. My commitment to self-improvement and staying
-            up-to-date with industry trends is a fundamental aspect of my
-            journey.
-            <br /><br />
-            My coding journey has been a thrilling adventure, driven by my
-            desire to create, innovate, and push the boundaries of what's
-            possible in the digital landscape. I've also had the privilege of
-            creating multiple projects in different programming languages, which
-            has not only honed my skills but also allowed me to tackle a wide
-            range of challenges. Join me as I share my coding odyssey,
-            experiences, and the diverse projects that have defined my path in
+            Hello, I'm Akuwa, a passionate technologist with a degree in
+            Computer Engineering, specializing in both hardware and software. My
+            coding journey began with inspiration from my sister's dedication to
+            BSIT, sparking my own interest in technology and software
+            development. Graduating on June 28, 2023, I continue to enhance my
+            skills through Udemy courses, staying committed to self-improvement
+            and keeping pace with industry trends. Join me as I share my coding
+            odyssey, experiences, and diverse projects that define my path in
             the world of IT.
           </p>
           <button class="btn-learn-more learn-more">
             <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
             </span>
-            <span class="button-text">Find out Who I Am</span>
+            <span
+              ><a class="button-text" href="about.html"
+                >Find out Who I Am</a
+              ></span
+            >
           </button>
         </div>
       </div>
@@ -231,13 +217,6 @@
             </div>
             <p>Premiere Pro</p>
           </div>
-
-          <div class="skills-holder">
-            <div class="skill-icon-container">
-              <img src="image/skill-icon/adobe_after_effects.png" alt="" />
-            </div>
-            <p>After Effects</p>
-          </div>
         </div>
 
         <p class="skills-separator">Used during school activity</p>
@@ -268,7 +247,15 @@
         </div>
 
         <p class="skills-separator">Still learning</p>
+
         <div class="skills-container">
+          <div class="skills-holder">
+            <div class="skill-icon-container">
+              <img src="image/skill-icon/adobe_after_effects.png" alt="" />
+            </div>
+            <p>After Effects</p>
+          </div>
+
           <div class="skills-holder">
             <div class="skill-icon-container">
               <img src="image/skill-icon/icons8-postgresql-48.png" alt="" />
@@ -406,7 +393,7 @@
                   class="dllink"
                   href="https://aquablueice.github.io/facebook-clone/"
                   target="_blank"
-                  >Open Here!</a
+                  >Visit Here!</a
                 >
               </div>
             </div>
@@ -431,7 +418,7 @@
                   class="dllink"
                   href="https://aquablueice.github.io/youtube-clone/"
                   target="_blank"
-                  >Open Here!</a
+                  >Visit Here!</a
                 >
               </div>
             </div>
@@ -473,7 +460,8 @@
             <div class="hidden-more-info">
               <p class="project-info-text">Technologies:</p>
               <div class="more-info">
-                <p>Java - Android Studio</p>
+                <p class="technologies-used">Java</p>
+                <p class="technologies-used">Android Studio</p>
               </div>
               <p class="project-info-text">Description:</p>
               <div class="more-info">
@@ -545,7 +533,8 @@
             <div class="hidden-more-info">
               <p class="project-info-text">Technologies:</p>
               <div class="more-info">
-                <p>Java - Android Studio</p>
+                <p class="technologies-used">Java</p>
+                <p class="technologies-used">Android Studio</p>
               </div>
               <p class="project-info-text">Description:</p>
               <div class="more-info">
@@ -590,19 +579,32 @@
         </div>
 
         <p class="proj-sample-section">Video Editing & Drawing</p>
+        <button class="btn-gallery neon">
+          <a href="#">Go to Gallery</a>
+        </button>
       </div>
     </section>
 
     <section class="education">
       <div class="container">
         <h2>Education</h2>
-        <p class="school-info">
-          <span class="degree">BACHELOR OF SCIENCE IN COMPUTER ENGINEERING</span
-          ><br />
-          <span class="dategrad">2019 - 2023</span>
-          <br />
-          University of Perpetual Help System Laguna – Biñan Campus
-        </p>
+        <div class="school">
+          <div class="school-logo-holder">
+            <img
+              class="school-logo"
+              src="image/perpetual-logo.png"
+              alt="perpetual-logo"
+            />
+          </div>
+          <p class="school-info">
+            <span class="degree"
+              >BACHELOR OF SCIENCE IN COMPUTER ENGINEERING</span
+            ><br />
+            <span class="dategrad">2019 - 2023</span>
+            <br />
+            University of Perpetual Help System Laguna – Biñan Campus
+          </p>
+        </div>
       </div>
     </section>
 
@@ -708,6 +710,6 @@
       </div>
     </section>
 
-    <script src="/script.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>

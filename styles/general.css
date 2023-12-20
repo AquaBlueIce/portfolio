@@ -1,3 +1,6 @@
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +20,132 @@ h2 {
   color: white;
   font-family: 'Clash Display';
 }
+
+
+/* || GENERAL */
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+#about,
+#skills,
+#experience,
+#projects,
+#contact {
+  scroll-margin-top: 50px;
+}
+
+
+/* || HEADER */
+
+.header {
+  position: fixed;
+  height: 50px;
+  /* background: linear-gradient(to bottom,rgb(0, 10, 56),white); */
+  background-color:rgba(0, 10, 56, 0.5);
+  backdrop-filter: blur(10px);
+  /* filter: blur(10px); */
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;  
+  z-index: 2;
+}
+
+.left-section {
+  /* background-color: #89f8ff; */
+  padding-left: 20px;
+  display: flex;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo-img {
+  background-color: #53e8d4;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  margin-right: 2px;
+}
+
+.logo-text {
+  /* font-family: 'Poppins'; */
+  font-family: 'Burbank Big Cd Bd';
+  font-size: 25px;
+}
+
+.center-section {
+  width: 500px;
+}
+
+.ul {
+  font-family: 'Clash Display';
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  transition: all 0.1s ;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #89f8ff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover {
+  color: #89f8ff;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.right-section {
+  /* background-color: #89f8ff; */
+  padding-right: 20px;
+}
+
+
+.btn-cv {
+  border: 1px solid #25C4F8;
+  height: 30px;
+  width: 75px;
+  border-radius: 15px;
+  color: #53e8d4;
+  background-color: transparent;
+  transition: all 0.2s ease;
+
+}
+
+.neon:hover {
+  box-shadow: 0 0 10px 1px #53e8d4;
+  transition: all 0.1s ease-in;
+}
+
 
 @font-face {
   font-family: 'Clash Display';

@@ -1,0 +1,8 @@
+About Me
+Hello, I'm Akuwa, and I embarked on my coding journey from a simple moment of inspiration. It all began when I saw my sister, a diligent BSIT (Bachelor of Science in Information Technology) student, passionately immersed in the world of technology. Witnessing her dedication and the remarkable things she could create through coding ignited a spark within me. From that moment, I knew I had found my calling in the realm of technology and software development.
+
+In addition to my passion for coding, I have a strong academic foundation. I pursued a degree in Computer Engineering and proudly graduated on June 28, 2023. My educational journey has equipped me with a solid understanding of both hardware and software, making me a well-rounded technologist.
+
+But the learning journey doesn't stop with graduation. I'm currently enrolled in numerous Udemy courses to keep expanding my knowledge and skills in various programming languages and emerging technologies. My commitment to self-improvement and staying up-to-date with industry trends is a fundamental aspect of my journey.
+
+My coding journey has been a thrilling adventure, driven by my desire to create, innovate, and push the boundaries of what's possible in the digital landscape. I've also had the privilege of creating multiple projects in different programming languages, which has not only honed my skills but also allowed me to tackle a wide range of challenges. Join me as I share my coding odyssey, experiences, and the diverse projects that have defined my path in the world of IT.

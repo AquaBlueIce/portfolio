@@ -1,126 +1,4 @@
-/* || GENERAL */
 
-a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-.btn {
-  cursor: pointer;
-}
-
-#about,
-#skills,
-#experience,
-#projects,
-#contact {
-  scroll-margin-top: 50px;
-}
-
-
-/* || HEADER */
-
-.header {
-  position: fixed;
-  height: 50px;
-  /* background: linear-gradient(to bottom,rgb(0, 10, 56),white); */
-  background-color:rgba(0, 10, 56, 0.5);
-  backdrop-filter: blur(10px);
-  /* filter: blur(10px); */
-  /* background-color: aliceblue; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  top: 0;
-  left: 0;
-  right: 0;  
-  z-index: 2;
-}
-
-.left-section {
-  /* background-color: #89f8ff; */
-  padding-left: 20px;
-  display: flex;
-}
-
-.logo {
-  cursor: pointer;
-}
-
-.logo-img {
-  background-color: #53e8d4;
-  height: 20px;
-  width: 20px;
-  border-radius: 5px;
-  margin-right: 2px;
-}
-
-.logo-text {
-  /* font-family: 'Poppins'; */
-  font-family: 'Burbank Big Cd Bd';
-  font-size: 25px;
-}
-
-.center-section {
-  width: 500px;
-}
-
-.ul {
-  font-family: 'Clash Display';
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  transition: all 0.1s ;
-}
-
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #89f8ff;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover {
-  color: #89f8ff;
-}
-
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.right-section {
-  /* background-color: #89f8ff; */
-  padding-right: 20px;
-}
-
-
-.btn-cv {
-  border: 1px solid #25C4F8;
-  height: 30px;
-  width: 75px;
-  border-radius: 15px;
-  color: #53e8d4;
-  background-color: transparent;
-  transition: all 0.2s ease;
-
-}
-
-.neon:hover {
-  box-shadow: 0 0 10px 1px #53e8d4;
-  transition: all 0.1s ease-in;
-}
 
 
 
@@ -136,11 +14,22 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+
 }
 
 .landing-page {
   padding: 30px;
   width: 1000px;
+}
+
+.intro::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background:  linear-gradient(to top,rgb(0, 10, 56),transparent);
 }
 
 .landing-page p{
@@ -174,6 +63,10 @@ a {
 .ptext:after {
   content: 'Computer Engineer';
   animation: animate 5s infinite;
+}
+
+.subtitle{
+  font-size: 20px;
 }
 
 @keyframes animate {
@@ -454,8 +347,13 @@ a {
   transition: all .1s ease;
 }
 
+:is(.website-project-holder:hover) .hover-image{
+  transform: scale(110%);
+}
+
 .hover-image:hover {
   transform: scale(110%);
+  /* cursor: pointer; */
 }
 
 .website-project-info {
@@ -476,6 +374,7 @@ a {
   margin-right: 5px;
   height: fit-content;
   width: 300px;
+  
   /* position: relative; */
 }
 
@@ -484,6 +383,7 @@ a {
   align-items: center;
   height: fit-content;
   margin-bottom: 5px;
+  cursor: pointer;
   /* animation: showInfo 0.5s ease; */
 }
 
@@ -579,11 +479,37 @@ a {
   margin-bottom: 5px;
 }
 
+.more-info{
+  display: flex;
+}
+
+.more-info .technologies-used{
+  background-color: #4a4d79;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 15px;
+}
+
 .proj-sample-section {
   font-family: 'Clash Display';
   font-weight: 100;
   color: white;
   font-size: 20px;
+}
+
+.btn-gallery {
+  background-color: #1c2653;
+  border: 1px solid aqua;
+  font-family: "Clash Display";
+  font-size: 15px;
+  font-weight: 500;
+  color: whitesmoke;
+  border-radius: 15px;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 /* || EDUCATION */
@@ -600,6 +526,20 @@ a {
 .container {
   width: 700px;
   height: fit-content;
+}
+
+.school {
+  display: flex;
+}
+
+.school-logo-holder {
+  height: 90px;
+  margin-right: 10px;
+
+}
+
+.school-logo {
+  height: 100%;
 }
 
 .school-info {
