@@ -46,7 +46,7 @@ a {
 
 .header {
   position: fixed;
-  height: 50px;
+  max-height: 50px;
   /* background: linear-gradient(to bottom,rgb(0, 10, 56),white); */
   background-color:rgba(0, 10, 56, 0.5);
   backdrop-filter: blur(10px);
@@ -55,6 +55,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all .3s ease-in-out;
   top: 0;
   left: 0;
   right: 0;  
@@ -144,6 +145,106 @@ a {
 .neon:hover {
   box-shadow: 0 0 10px 1px #53e8d4;
   transition: all 0.1s ease-in;
+}
+
+
+
+/* HAMBURGER MENU */
+
+
+:root{
+  --bar-hieght: 5px;
+  --bar-widht: 30px;
+  --hamburger-gap: 6px;
+  --hamburger-height: calc(var(--bar-hieght)*3 + var(--hamburger-gap)*2);
+}
+.hamburger-menu {
+  --x-widht: calc(var(--hamburger-height)* 1.41421356237);
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  margin: 8px;
+  right: 5px;
+  top: 5px;
+}
+
+.hamburger-menu::after,
+.hamburger-menu::before,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-widht);
+  height: var(--bar-hieght);
+  background-color: whitesmoke;
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: all .3s ease-in-out;
+}
+
+
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-widht);
+  translate: 0 calc(var(--bar-hieght)/-2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-widht);
+  translate: 0 calc(var(--bar-hieght)/2);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  transition: all .3s ease-in-out;
+  translate: 100%;
+  /* padding-top: calc(var(--hamburger-height) + 8px + 1rem); */
+  width: 200px;
+  background-color: rgba(0, 0, 46,.7);
+  backdrop-filter: blur(50px);
+  color: whitesmoke;
+  /* position: absolute; */
+  /* max-height: max-content; */
+  margin-top: 231px;
+  /* top: 0; */
+}
+
+.hamburger-menu:has(input:checked) + .sidebar{
+  translate: 0;
+  /* max-height: 100px; */
+  /* background-color: #25C4F8; */
+}
+
+.sidebar-holder {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  font-family: 'Clash Display';
+  list-style: none;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+.sidebar ul li {
+  margin-bottom: 5px;
 }
 
 

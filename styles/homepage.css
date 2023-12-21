@@ -1,8 +1,5 @@
 
 
-
-
-
 /* || INTRO */
 
 .intro {
@@ -299,6 +296,18 @@
   word-wrap: break-word;
 }
 
+.btn-certificate {
+  background-color: #0c1b68;
+  border-radius: 15px;
+  box-shadow: #89f8ff;
+  border-style: none;
+}
+
+.btn-certificate a {
+  font-family: 'poppins';
+  font-size: 17px;
+}
+
 
 /* || PROJECTS */
 
@@ -419,6 +428,7 @@
   border: 1px solid whitesmoke;
   border-radius: 5px;
   margin-right: 20px;
+
 }
 
 .project-info-bottom {
@@ -473,6 +483,10 @@
   font-family: 'Clash Display';
   color: aliceblue;
   font-size: 15px;
+}
+
+.dllink{
+  padding: 2px;
 }
 
 .more-info p{

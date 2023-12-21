@@ -1,4 +1,17 @@
+@media screen and (min-width:767px) {
+  .sidebar-holder {
+    display: none;
+  }
+}
+
 @media screen and (max-width:767px) {
+  .center-section,
+  .right-section{
+    display: none;
+  }
+
+
+
   .name-s {
     font-family: "Barlow Condensed Black";
     font-size: 50px;
